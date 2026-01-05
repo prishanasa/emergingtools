@@ -1,0 +1,32 @@
+function hasTripletSum(arr, target) {
+    let n = arr.length;
+    arr.sort((a, b) => a - b);
+    
+    // Fix the first element as arr[i]
+    for (let i = 0; i < n - 2; i++) {
+        
+        // Initialize left and right pointers with 
+        // start and end of remaining subarray
+        let l = i + 1, r = n - 1;
+        
+        let requiredSum = target - arr[i];
+        while (l < r) {
+            if (arr[l] + arr[r] == requiredSum)
+                return true;
+            if (arr[l] + arr[r] < requiredSum)
+                l++;
+            else if (arr[l] + arr[r] > requiredSum)
+                r--;
+        }
+    }
+
+    return false;
+}
+
+// Driver code
+let arr = [1, 4, 45, 6, 10, 8];
+let target = 13;
+if (hasTripletSum(arr, target))
+    console.log("true");
+else
+    console.log("false");
