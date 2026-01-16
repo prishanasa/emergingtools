@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎓 AI-Based Academic Answer Evaluation System
 
 > Powered by **RAG · FAISS · Groq LLaMA-3 · Sentence Transformers · Streamlit**
@@ -136,3 +137,6 @@ student_name,question,student_answer
 Alice,What is RAG?,RAG stands for Retrieval Augmented Generation...
 Bob,Explain FAISS,FAISS is a library for efficient similarity search...
 ```
+=======
+Emerging tools Lab Work
+>>>>>>> 1a2b3350ade651a153a44dbc49d1cb094333612d
