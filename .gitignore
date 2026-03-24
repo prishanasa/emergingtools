@@ -4,3 +4,7 @@ __pycache__/
 vector_store/
 uploaded_pdfs/
 .DS_Store
+eval_log.txt
+*.log
+*.pkl
+*.index
